@@ -1,0 +1,692 @@
+@font-face {
+  font-family: "Cooper Hewitt Heavy";
+  src: url("CooperHewitt-Heavy.otf") format("opentype"),
+    url("CooperHewitt-Heavy.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Cooper Hewitt Heavy";
+  font-size: 3rem;
+  color: #f2f2f2;
+}
+
+header {
+  background-color: #3a3a3a;
+  padding: 0.625rem 1.25rem;
+  z-index: 10;
+}
+
+.flex-container,
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu > .dropdown-item > a:hover {
+  color: #727812;
+}
+
+.main-menu .dropdown-item .dropdown .item a {
+  text-decoration: underline;
+  font-size: 1.125rem;
+}
+
+.main-menu .dropdown-item .dropdown .item a:hover {
+  background-color: #707070;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.main-menu > .dropdown-item > a {
+  font-family: "Cooper Hewitt Heavy";
+  font-size: 1.5rem;
+}
+
+main .good-food .inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+main .good-food .col {
+  flex: 1;
+  padding: 1rem;
+}
+
+main .good-food h2,
+main .local-travel h2,
+main .stuff .col h2 {
+  font-size: 7rem;
+  font-family: "Cooper Hewitt Heavy";
+  line-height: 0.9;
+  color: #404040;
+}
+main .good-food h2 span:last-of-type {
+  color: #707070;
+  display: block;
+  padding-left: 4rem;
+}
+main .local-travel h2 span:first-of-type {
+  color: #727812;
+}
+main .local-travel h2 span:last-of-type {
+  display: block;
+  padding-left: 4rem;
+}
+
+main .good-food p {
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+  padding-right: 3rem;
+}
+
+main .good-food .button,
+main .local-travel .button,
+main .video .button {
+  width: 15rem;
+  background-color: #404040;
+  color: #f2f2f2;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3331rem;
+  cursor: pointer;
+  border-radius: 1.563rem;
+}
+main .good-food .button:hover,
+main .local-travel .button:hover,
+main .video .button:hover {
+  background-color: #c65614;
+}
+main .local-travel .button {
+  margin-left: 8rem;
+}
+main .video .button {
+  background-color: #f2f2f2;
+  color: #707070;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+
+main .good-food img:last-of-type {
+  padding-right: 5.5rem;
+  position: relative;
+  top: -1.875rem;
+  left: -4rem;
+  width: 100%;
+}
+main .local-travel {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.local-travel .col {
+  position: relative;
+  z-index: 1;
+  padding-left: 2rem;
+}
+.stuff .card {
+  margin-bottom: 3rem;
+}
+.stuff .card p {
+  font-size: 1.25rem;
+  color: #404040;
+  padding: 0 0 1.25rem 1.25rem;
+}
+
+.stuff .card a {
+  font-size: 1.3331rem;
+  text-transform: uppercase;
+  color: #404040;
+  padding-left: 1.25rem;
+}
+main .stuff a:hover {
+  color: #c65614;
+}
+
+.stuff .card img {
+  background-color: #f2f2f2;
+  padding: 1.25rem 1.25rem 3.125rem 1.25rem;
+  box-sizing: border-box;
+}
+.stuff .card h3 {
+  font-size: 3.1rem;
+  color: #b29124;
+  font-family: "Cooper Hewitt Heavy";
+  position: relative;
+  top: -2rem;
+  padding-left: 1rem;
+}
+
+.stuff .col img {
+  width: 3.125rem;
+  position: relative;
+  right: -9.375rem;
+  top: -7.5rem;
+}
+.stuff .col h2 {
+  padding-top: 10rem;
+  padding-left: 10rem;
+}
+.video h2 {
+  font-size: 7rem;
+  font-family: "Cooper Hewitt Heavy";
+  line-height: 0.9;
+  color: #f2f2f2;
+  padding: 2rem;
+}
+.video .col {
+  background-color: #404040;
+  padding-left: 5rem;
+  width: 75%;
+}
+
+.video .col p {
+  font-size: 1.25rem;
+  padding: 0 0 2rem 3rem;
+  color: #f2f2f2;
+  width: 40%;
+}
+.video .col h2 span {
+  display: block;
+}
+footer {
+  background-color: #3a3a3a;
+  color: #f2f2f2;
+  padding: 2.5rem 0 4rem 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+footer li {
+  list-style: none;
+}
+footer li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: normal;
+}
+footer .social-icons svg:hover {
+  fill: #727812;
+}
+footer .footer-menu .footer-section ul li a:hover,
+li.footer-section h3:hover {
+  color: #727812;
+}
+footer .social-icons a {
+  margin-right: 0.938rem;
+}
+
+footer .social-icons svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+footer .footer-section ul li {
+  margin-bottom: 0.313rem;
+  width: 100%;
+}
+footer .footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+footer .footer-section h3 {
+  margin-bottom: 0.625rem;
+}
+
+@media screen and (min-width: 840px) and (max-width: 1349px) {
+  .wide-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul.main-menu {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul.main-menu > li {
+    position: relative;
+    padding: 1rem;
+  }
+
+  nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    min-width: 18.75rem;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+  .dropdown ul {
+    width: 10.625rem;
+  }
+  nav ul li .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3a3a3a;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  nav ul li .dropdown ul li {
+    padding: 0.5rem 1rem;
+  }
+
+  nav ul li .dropdown ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  nav ul.main-menu > li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul.main-menu > li a img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  nav ul li.dropdown-item:hover .dropdown {
+    display: block;
+  }
+  main .good-food .col img {
+    max-width: 25rem;
+    padding-right: 0;
+  }
+  main .local-travel {
+    max-height: 28.125rem;
+  }
+  main .local-travel .col:first-of-type {
+    position: relative;
+    padding-left: 7rem;
+  }
+  .local-travel img {
+    position: relative;
+    left: -1.25rem;
+    bottom: -3.125rem;
+    right: 0;
+    width: 75%;
+  }
+  .stuff .card img {
+    width: 100%;
+  }
+
+  .stuff .card {
+    width: calc(50% - 1rem);
+  }
+
+  .stuff > .flex {
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .video .inner-container {
+    position: relative;
+  }
+  .video img {
+    position: absolute;
+    left: 77%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+  }
+  .video .col {
+    margin: 1.25rem;
+  }
+
+  footer .footer-menu {
+    flex-wrap: nowrap;
+  }
+
+  footer .footer-section {
+    width: 100%;
+  }
+
+  footer .footer-section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+@media screen and (max-width: 839px) {
+  .flex-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-menu .dropdown-item a img {
+    display: none;
+  }
+
+  .main-menu li {
+    list-style: none;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    z-index: 9999;
+    flex-grow: 1;
+  }
+
+  .inner-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    z-index: 1001;
+  }
+
+  .menu-icon svg {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    background-color: #3a3a3a;
+    padding: 2.5rem 0.625rem 0 0;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  .sidebar.active {
+    display: flex;
+  }
+
+  .main-menu {
+    text-align: end;
+    border-top: 0.04rem solid #f2f2f2;
+  }
+
+  .main-menu > .dropdown-item > a {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .main-menu .item {
+    margin-bottom: 0.625rem;
+  }
+
+  .main-menu .item a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.25rem;
+    display: block;
+    padding: 0.313rem 0;
+  }
+
+  main .good-food {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main .good-food .col img {
+    width: 100%;
+  }
+
+  main .good-food img:last-of-type {
+    padding-right: 0;
+  }
+  main .local-travel .button,
+  .video .button {
+    margin: 0.85rem 0;
+  }
+  .local-travel img {
+    padding-top: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .stuff .card {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .stuff .card img {
+    width: 100%;
+  }
+  .stuff .card {
+    align-items: center;
+  }
+  main .video .button,
+  main .video p {
+    margin: 0;
+  }
+  .video .col {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .video .col p,
+  .video .col h2 {
+    width: 100%;
+    padding-left: 0;
+  }
+  main .video .button {
+    margin-bottom: 2rem;
+  }
+  .video img {
+    width: 100%;
+  }
+
+  footer .footer-section {
+    width: calc(50% - 0.625rem);
+    margin-bottom: 1.25rem;
+  }
+
+  footer .footer-section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .good-food .col h2,
+  .local-travel .col h2,
+  .video .col h2 {
+    font-size: 4.5rem;
+  }
+  main .stuff .col h2 {
+    font-size: 5rem;
+    padding-left: 4rem;
+  }
+
+  main .stuff .col img {
+    position: relative;
+    top: -5.5rem;
+    left: 3rem;
+  }
+  main .local-travel .col {
+    padding: 0;
+  }
+  footer .social-icons a {
+    margin-right: 0.438rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .good-food .col:last-of-type {
+    padding: 0;
+    width: 80%;
+  }
+  main .good-food .col:last-of-type img:first-child {
+    margin: 0;
+    padding: 0;
+  }
+  main .good-food .col:last-of-type img:last-child {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .wide-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul.main-menu {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul.main-menu > li {
+    position: relative;
+    padding: 1rem;
+  }
+
+  nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    min-width: 18.75rem;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+
+  nav ul li .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3a3a3a;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  nav ul li .dropdown ul li {
+    padding: 0.5rem 1rem;
+  }
+
+  nav ul li .dropdown ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  nav ul.main-menu > li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul.main-menu > li a img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  nav ul li.dropdown-item:hover .dropdown {
+    display: block;
+  }
+  .stuff .card {
+    width: calc(25% - 1rem);
+  }
+
+  main .good-food {
+    margin-left: 10rem;
+  }
+
+  main .good-food .col img {
+    width: 100%;
+  }
+
+  main .good-food img:last-of-type {
+    padding-right: 0;
+  }
+  main .local-travel {
+    max-height: 28.125rem;
+  }
+  main .local-travel img {
+    width: 100%;
+  }
+  main .local-travel {
+    margin-top: 5rem;
+  }
+  main .local-travel .col:first-of-type {
+    position: relative;
+    padding-left: 7rem;
+  }
+  .local-travel img {
+    position: relative;
+    left: -5rem;
+    bottom: 6.875rem;
+    width: 100%;
+  }
+  .stuff > .flex {
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .local-travel .col:first-of-type {
+    position: relative;
+    top: -5rem;
+  }
+  .video img {
+    position: relative;
+    left: -13rem;
+    max-width: 100%;
+  }
+  .video .col {
+    margin: 1rem;
+  }
+  li.footer-section ul {
+    padding: 0.625rem 6.25rem 1.25rem 0;
+  }
+}
